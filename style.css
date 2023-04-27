@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.header{
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    padding: 1.5rem;
+}
+.header ul{
+    display: flex;
+    gap: 8rem;
+    list-style: none;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 300;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+}
+.header .logo{
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+span{
+    color: #ff3f81;
+}
+#background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    top: 0;
+    z-index: -1;
+}
+.line{
+    width: 3px;
+    height: 390px;
+    background-color: #fff;
+    position: absolute;
+    left: 6%;
+    top: 30%;
+}
+.hero-title{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding-top: 8rem;
+    position: absolute;
+    left: 8%;
+}
+.hero-title p{
+    font-size: 21px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.hero-title h2{
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #fff;
+    padding-top: 0rem;
+}
+.hero-title .details{
+    color: #fff;
+    width: 60%;
+    padding-bottom: 3.5rem;
+    padding-top: 1.5rem;
+    letter-spacing: 3px;
+}
+.social{
+    max-width: 1200px;
+    margin: 0px auto;
+    position: absolute;
+    left: -2%;
+    top: 85%;
+}
+.social a{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: inline-flex;
+    font-size: 17px;
+    align-items: center;
+    justify-content: center;
+    color: #ff3f81;
+    cursor: pointer;
+    margin: 20px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: solid 3px #ff3f81;
+}
+.social a:hover{
+    transform: scale(1.1);
+    background: #ff3f81;
+    transition: .4s;
+    color: #fff;
+}
+.hero-title .learn-more{
+    position: absolute;
+    top: 110%;
+    left: -0.5%;
+}
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   button.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #ff3f81;
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: black;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #ff3f81;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+.multitext{
+    color: #ff3f81;
+    text-transform: capitalize;
+}

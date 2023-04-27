@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div data-aos="fade-down" data-aos-duration="800" class="logo"><span>JM</span>D.</div>
+            <ul data-aos="fade-down" data-aos-duration="800">
+                <li>Home</li>
+                <li>Projects</li>
+                <li>About</li>
+                <li>Contacts</li>
+            </ul>
+        </div>
+        <div id="background"></div>
+        <div data-aos="fade-right" data-aos-delay="600" data-aos-duration="700" class="line"></div>
+            <div class="hero-title">
+                <p data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="800">
+                Hello, I'm</p>
+                <h2  data-aos="fade-left" data-aos-delay="500" data-aos-duration="700">John Mark Depaclayon</h2>
+                <p data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="800">And I'm a <span data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="800"class="multitext"></span></p>
+                <div  data-aos="fade-right" data-aos-delay="700" data-aos-duration="700" class="details">
+                    Hi there! "Enhance your online presence with our top-notch front-end development services. Our team of experts specializes in creating user-friendly and visually appealing websites using the latest technologies and design trends.
+                </div>
+                <div  data-aos="fade-left" data-aos-delay="800" data-aos-duration="700" class="social">
+                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <div  data-aos="fade-up" data-aos-delay="500" data-aos-duration="700" class="learn-more">
+                <button class="learn-more">
+                    <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Learn More</span>
+                  </button>
+                </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    VANTA.NET({
+  el: "#background",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00
+})
+
+var typingEffect = new Typed(".multitext",{
+            strings : ["FRONTEND DEVELOPER"],
+            loop : true,
+            typeSpeed : 50,
+            backSpeed : 50,
+            backDelay : 10
+        });
+    
+    AOS.init();
+    </script>
+</body>
+</html>
